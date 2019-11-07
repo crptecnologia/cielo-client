@@ -19,7 +19,7 @@
   },
   "require": {
     "ext-json": "*",
-    "guzzlehttp/guzzle": "^6.*.*"
+   "guzzlehttp/guzzle": "^6*"
   },
   "require-dev": {
     "phpunit/phpunit": "^8",
