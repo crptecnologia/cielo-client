@@ -54,21 +54,16 @@ class SplitService
     ): PaymentResponse {
         $options = [
             'headers' => $this->headers,
-            'body' => $this->makeRequestBody($split),
+            'json' => new SplitMapper(
+                $split,
+                $this->isSandBox,
+                $this->returnUrl
+            ),
         ];
 
         $response = $this->httpCommence->post(self::SALES_ENDPOINT, $options);
 
         return self::makeResponse($response);
-    }
-
-    private function makeRequestBody(Split\Request\SplitRequest $split): string
-    {
-        return \GuzzleHttp\json_encode(new SplitMapper(
-            $split,
-            $this->isSandBox,
-            $this->returnUrl
-        ));
     }
 
     /**
