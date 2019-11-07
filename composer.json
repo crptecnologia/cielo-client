@@ -1,0 +1,29 @@
+{
+  "name": "crptecnlogia/cielo-client",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Dejair Sisconeto",
+      "email": "dejair.sisconeto@crptecnologia.com.br"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "CrpTecnologia\\CieloClient\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  },
+  "require": {
+    "guzzlehttp/guzzle": "^6.4",
+    "ext-json": "*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^8",
+    "friendsofphp/php-cs-fixer": "^2.16",
+    "phpstan/phpstan": "^0.11.19"
+  }
+}
