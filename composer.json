@@ -18,10 +18,10 @@
     }
   },
   "require": {
-    "ext-json": "*",
-    "guzzlehttp/guzzle": "6.*.*"
+    "ext-json": "*"
   },
   "require-dev": {
+    "guzzlehttp/guzzle": "6.*.*",
     "phpunit/phpunit": "^8",
     "friendsofphp/php-cs-fixer": "^2.16",
     "phpstan/phpstan": "^0.11.19"
